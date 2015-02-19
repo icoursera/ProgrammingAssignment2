@@ -18,9 +18,10 @@ makeCacheMatrix <- function(x = number()) {
     ##return 'x' of function closure
     get <- function() x
     
-    ##setSolve function sets or redefines the exiting cache value in function parent env or global env if variable is not found.
+    ##setSolve function sets or redefines the exiting cached value in function closure or/and parent environment
     setSolve <- function(matrixSolve) m <<- matrixSolve
-    ##return cached valu
+    
+    ##return cached value
     getSolve <- function() m
     
     ##return list of functions
